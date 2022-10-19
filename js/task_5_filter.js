@@ -30,9 +30,9 @@ const fruits = [
     { name: 'bananas', quantity: 100, isfresh: true },
 ]
 
-const getFruitsWithQuantity = function (fruit) {
-    return fruit.quantity >= 120
-}
+// const getFruitsWithQuantity = function (fruit) {
+//     return fruit.quantity >= 120
+// } // цю ф-цію ми передали інлайн нижче аргументом
 
-const resultThree = filter(fruits, getFruitsWithQuantity)
+const resultThree = filter(fruits, fruit => fruit.quantity >= 120)
 console.log(resultThree)

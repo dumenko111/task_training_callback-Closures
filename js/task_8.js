@@ -20,8 +20,8 @@ const rounder2 = function (places) {
     }
 }
 
-const r1 = rounder2(2)
-const r2 = rounder2(3)
+const r1 = rounder2(2) //тепер places замикається на 2
+const r2 = rounder2(3) //тепер places замикається на 3
 
 console.log(r1(5.5454848))
 console.log(r2(8.061460))
